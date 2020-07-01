@@ -13,12 +13,12 @@
         "mobile": "assets/screenshot-mobile.jpg"
     },
     "scripts": {
+        "scss": "sass assets/scss/starter.scss assets/css/starter.css",
         "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
         "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
-        "css-purge": "purgecss --css assets/css/starter.css --content index.html --output assets/css/",
         "css": "npm run css-compile && npm run css-prefix",
-        "server": "serve --listen 3000",
-        "watch": "nodemon -e html,scss -x \"npm run css\"",
+        "server": "ghost start",
+        "watch": "nodemon -e html,scss -x \"npm run css && ghost restart\"",
         "test": "gscan ."
     },
     "author": {
