@@ -1,0 +1,95 @@
+{
+    "name": "ghost-template-generic",
+    "description": "Starter template for Ghost CMS using Bootstrap v5",
+    "demo": "https://demo.ghost.io",
+    "version": "0.0.1",
+    "engines": {
+        "ghost": ">=3.0.0",
+        "ghost-api": "v3"
+    },
+    "license": "MIT",
+    "screenshots": {
+        "desktop": "assets/screenshot-desktop.jpg",
+        "mobile": "assets/screenshot-mobile.jpg"
+    },
+    "scripts": {
+        "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
+        "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
+        "css-purge": "purgecss --css assets/css/starter.css --content index.html --output assets/css/",
+        "css": "npm run css-compile && npm run css-prefix",
+        "server": "serve --listen 3000",
+        "watch": "nodemon -e html,scss -x \"npm run css\"",
+        "test": "gscan ."
+    },
+    "author": {
+        "name": "Ghost Foundation",
+        "email": "hello@ghost.org",
+        "url": "https://ghost.org"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Magazine"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TryGhost/Casper.git"
+    },
+    "bugs": "https://github.com/TryGhost/Casper/issues",
+    "dependencies": {
+        "bootstrap": "^4.5.0",
+        "jquery": "^3.5.1",
+        "popper.js": "1.16.1-lts"
+    },
+    "devDependencies": {
+        "@tryghost/release-utils": "0.5.0",
+        "autoprefixer": "9.7.6",
+        "beeper": "2.0.0",
+        "cssnano": "4.1.10",
+        "gscan": "3.4.1",
+        "gulp": "4.0.2",
+        "gulp-concat": "2.6.1",
+        "gulp-livereload": "4.0.2",
+        "gulp-postcss": "8.0.0",
+        "gulp-uglify": "3.0.2",
+        "gulp-zip": "5.0.1",
+        "inquirer": "7.1.0",
+        "postcss-color-function": "4.1.0",
+        "postcss-custom-properties": "9.1.1",
+        "postcss-easy-import": "3.0.0",
+        "pump": "3.0.0"
+    },
+    "browserslist": [
+        "defaults"
+    ],
+    "config": {
+        "posts_per_page": 25,
+        "image_sizes": {
+            "xxs": {
+                "width": 30
+            },
+            "xs": {
+                "width": 100
+            },
+            "s": {
+                "width": 300
+            },
+            "m": {
+                "width": 600
+            },
+            "l": {
+                "width": 1000
+            },
+            "xl": {
+                "width": 2000
+            }
+        }
+    }
+}
