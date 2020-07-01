@@ -2,30 +2,31 @@
 
 ## For More Information
 
-* Consult the [Ghost Documentation](https://ghost.org/docs/) for more information.
+* [Ghost v3 Documentation](https://ghost.org/docs/)
+* [Bootstrap v5 Documentation](https://v5.getbootstrap.com/docs/5.0)
 
 ## Quick Start for Local Testing and Development on macOS
 
-*Install Ghost CLI*
+**Install Ghost CLI**:
 `npm install ghost-cli@latest -g`
 
-*Install Local Instance* (from empty directory)
-`ghost install local`
+**Install Local Instance**:
+`ghost install local` (from empty directory)
 
-*Clone Theme Package from Template Repository*
+**Clone Theme Package from Template Repository**:
 `git clone https://github.com/eddievanbogaert/ghost-template-generic.git`
 
-*Install Theme Dependencies*
+**Install Theme Dependencies**:
 `npm install && ghost restart`
 
-*Compile Sass Customizations to CSS*
-`npm css-compile`
+**Compile Sass Customizations to CSS**:
+`npm run css-compile`
 
-*Optimize and Map CSS Files*
-`npm css-prefix`
+**Optimize and Map CSS Files**:
+`npm run css-prefix`
 
-*Restart Ghost Instance* (rebuilds with changes)
-`ghost restart`
+**Restart Ghost Instance**:
+`ghost restart` (rebuilds with changes)
 
-*Watch for HTML/SCSS Changes and Automate Local Build Steps*
+**Watch for HTML/SCSS Changes and Automate Local Build Steps**:
 `npm run watch`
