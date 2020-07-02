@@ -1,3 +1,14 @@
-{{ghost_head}}
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
 
-{{ghost_foot}}
+  {{!-- (Ghost) Main: Content from index.hbs, page.hbs, etc  --}}
+  {{body}}
+
+  {{!-- (Ghost) Partial: Site foooter with navigation --}}
+  {{site-footer}}
+
+  {{!-- (Ghost) System-required closing tag --}}
+  {{ghost_foot}} {{!-- *** NO ADDITIONAL CONTENT BELOW THIS LINE *** --}}
+
+</body>
+</html>
