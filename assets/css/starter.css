@@ -16,6 +16,22 @@
   font-family: "Inter", sans-serif;
 }
 
+.site-nav,
+.site-nav-left-wrapper,
+.site-nav-left,
+.site-nav-logo,
+.site-nav-content,
+.nav-post-title,
+.site-nav-right,
+.social-links,
+.social-link,
+.social-link-fb,
+.social-link-tw,
+.rss-button,
+.subscribe-button {
+  font-family: "Inter", sans-serif;
+}
+
 body {
   padding: 3rem;
 }
