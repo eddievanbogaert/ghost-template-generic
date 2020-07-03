@@ -13,6 +13,7 @@
         "mobile": "assets/screenshot-mobile.jpg"
     },
     "scripts": {
+        "build": "npm run sass & ghost restart",
         "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
         "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
         "css": "npm run css-compile && npm run css-prefix",
