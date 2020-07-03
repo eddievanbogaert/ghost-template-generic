@@ -16,6 +16,7 @@
   font-family: "Inter", sans-serif;
 }
 
+.site-wrapper,
 .site-nav,
 .site-nav-left-wrapper,
 .site-nav-left,
@@ -28,7 +29,9 @@
 .social-link-fb,
 .social-link-tw,
 .rss-button,
-.subscribe-button {
+.subscribe-button,
+.outer,
+.site-nav-main {
   font-family: "Inter", sans-serif;
 }
 
