@@ -1,8 +1,8 @@
-
-
+// ghost-template-generic
+// 
 
 //
-// ======== GLOBAL BOOTSTRAP OVERRIDES ========
+// ======== Global Bootstrap Overrides ========
 //
 
 // ---- From Bootstrap Docs: ----
@@ -53,6 +53,7 @@ $enable-shadows: true;
 
 // Styles presently required by fork of Casper (Ghost default) custom nav
 // TODO: Audit necessity/usefulness of these styles, reduce to base requirements
+.site-wrapper,
 .site-nav,
 .site-nav-left-wrapper,
 .site-nav-left,
@@ -65,7 +66,9 @@ $enable-shadows: true;
 .social-link-fb,
 .social-link-tw,
 .rss-button,
-.subscribe-button {
+.subscribe-button,
+.outer,
+.site-nav-main {
   font-family: $sans-serif;
 }
 
