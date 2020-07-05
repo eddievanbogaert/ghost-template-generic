@@ -43,9 +43,6 @@
         "url": "https://github.com/eddievanbogaert/ghost-template-generic.git"
     },
     "bugs": "https://github.com/eddievanbogaert/ghost-template-generic/issues",
-    "dependencies": {
-        "bootstrap": "^4.5.0"
-    },
     "devDependencies": {
         "@tryghost/release-utils": "0.5.0",
         "autoprefixer": "9.7.6",
