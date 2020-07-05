@@ -1,6 +1,36 @@
 {{!< default}}
 
-Seeing this text means you've successfully loaded up `ghost-template-generic`,
-a custom Ghost CRM theme, built with the Handlebars templating engine. And if 
-this button looks blue, that means the Bootstrap v5 Alpha presentation framework 
-should be working correctly, as well.
+<main id="site-main">
+
+  <h1>Hello, world!</h1>
+  {{!-- (Ghost) Main: Content from index.hbs, page.hbs, etc  --}}
+  <p class="pt-4 pb-4">Seeing this text means you've successfully loaded up 
+    `ghost-template-generic`, a custom Ghost CRM theme, built with the 
+    Handlebars templating engine. And if this button looks blue, that means 
+    the Bootstrap v5 Alpha presentation framework should be working 
+    correctly, as well.</p>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Click me!</button>
+
+  <!-- (Bootstrap) Example Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Success!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          If you're seeing this modal after clicking the button on the page, Bootstrap's CSS and JS are both working properly.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</main>
+
