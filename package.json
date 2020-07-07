@@ -14,13 +14,10 @@
     },
     "scripts": {
         "build": "npm run sass & ghost restart",
-        "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
-        "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
-        "css": "npm run css-compile && npm run css-prefix",
         "sass": "sass assets/scss/starter.scss assets/css/starter.css",
         "start": "ghost start",
         "test": "gscan .",
-        "watch": "nodemon -e html,scss -x \"npm run css && ghost restart\""
+        "watch": "nodemon -e html,scss -x \"npm run sass && ghost restart\""
     },
     "author": {
         "name": "Eddie VanBogaert",
