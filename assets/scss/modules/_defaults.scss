@@ -1,0 +1,41 @@
+
+// Default styles required for Ghost theme validation using gscan
+
+.kg-width-wide,
+.kg-width-full,
+.kg-gallery-container,
+.kg-gallery-row,
+.kg-gallery-image,
+.kg-bookmark-card,
+.kg-bookmark-container,
+.kg-bookmark-content,
+.kg-bookmark-title,
+.kg-bookmark-description,
+.kg-bookmark-metadata,
+.kg-bookmark-icon,
+.kg-bookmark-author,
+.kg-bookmark-publisher,
+.kg-bookmark-thumbnail {
+  display: none;
+}
+
+// Styles presently required by fork of Casper (Ghost default) custom nav
+// TODO: Audit necessity/usefulness of these styles, reduce to base requirements
+.site-wrapper,
+.site-nav,
+.site-nav-left-wrapper,
+.site-nav-left,
+.site-nav-logo,
+.site-nav-content,
+.nav-post-title,
+.site-nav-right,
+.social-links,
+.social-link,
+.social-link-fb,
+.social-link-tw,
+.rss-button,
+.subscribe-button,
+.outer,
+.site-nav-main {
+  font-family: $sans-serif;
+}
