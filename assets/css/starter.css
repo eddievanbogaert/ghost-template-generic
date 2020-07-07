@@ -13,7 +13,7 @@
 .kg-bookmark-author,
 .kg-bookmark-publisher,
 .kg-bookmark-thumbnail {
-  font-family: "Inter", sans-serif;
+  display: none;
 }
 
 .site-wrapper,
@@ -37,6 +37,16 @@
 
 body {
   padding: 3rem;
+}
+
+.post-card,
+.post-container,
+.post-header,
+.post-title,
+.post-content,
+.tags,
+.reading-time {
+  font-family: "Inter", sans-serif;
 }
 
 /*# sourceMappingURL=starter.css.map */
