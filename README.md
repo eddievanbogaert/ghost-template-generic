@@ -17,16 +17,10 @@
 `git clone https://github.com/eddievanbogaert/ghost-template-generic.git`
 
 **Install Theme Dependencies**:
-`npm install && ghost restart`
+`npm install && ghost restart` (rebuilds with changes)
 
-**Compile Sass Customizations to CSS**:
-`npm run css-compile`
+**Build Theme with Latest Changes**:
+`npm run build`
 
-**Optimize and Map CSS Files**:
-`npm run css-prefix`
-
-**Restart Ghost Instance**:
-`ghost restart` (rebuilds with changes)
-
-**Watch for HTML/SCSS Changes and Automate Local Build Steps**:
+**Watch for HTML/SCSS Changes and Automatically Rebuild**:
 `npm run watch`
